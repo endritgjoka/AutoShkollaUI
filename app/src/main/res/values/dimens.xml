@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Adjust the spacing value as needed -->
+    <dimen name="grid_spacing">10dp</dimen>
+    <dimen name="MAX_TITLE_TEXT_SIZE">24sp</dimen>
+    <dimen name="MIN_TITLE_TEXT_SIZE">16sp</dimen>
+</resources>

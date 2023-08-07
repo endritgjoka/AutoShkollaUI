@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- background shape-->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- corner radius-->
+            <stroke android:color="#615A5A" android:width="2dp" /> <!--border color and width -->
+        </shape>
+    </item>
+
+<!--    <item android:drawable="@android:drawable/checkbox_off_background" />-->
+</layer-list>

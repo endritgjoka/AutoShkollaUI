@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Testet" android:id="@+id/tests"
+        android:icon="@drawable/ic_launcher_home"
+        app:showAsAction="withText" />
+    <item android:title="Pyetjet" android:id="@+id/pyetjet"
+        android:icon="@drawable/ic_launcher_questions"
+        app:showAsAction="withText" />
+    <item android:title="Literatura" android:id="@+id/literatura"
+        android:icon="@drawable/ic_launcher_literature"
+        app:showAsAction="withText" />
+    <item android:title="LuajMëso" android:id="@+id/luaj_meso"
+        android:icon="@drawable/ic_launcher_game"
+        app:showAsAction="withText" />
+    <item android:title="Profili" android:id="@+id/profili"
+        android:icon="@drawable/ic_launcher_profile"
+        app:showAsAction="withText" />
+</menu>

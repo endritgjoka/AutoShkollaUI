@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiteratureViewActivity"
+    android:background="@color/black">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/literatureViewToolbar"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            app:title="Endrit"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            app:layout_collapseMode="pin"/>
+    </com.google.android.material.appbar.AppBarLayout>
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/freeLiterature1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="9dp"-->
+<!--        android:layout_marginRight="9dp"-->
+<!--        android:elevation="5dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        app:cardBackgroundColor="#2C2C2A"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardPreventCornerOverlap="true">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="8dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:src="@drawable/icons8" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingTop="8dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/titulli"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:maxLines="2"-->
+<!--                    android:text="Rruge"-->
+<!--                    android:textColor="#F4EFEF"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/permbajtja"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Perkufizimi i nocioneve per disa prej kuptimeve"-->
+<!--                    android:textColor="#DDD2D2"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView9"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text=">"-->
+<!--                android:textColor="#807575"-->
+<!--                android:textSize="24sp" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="60dp"
+            android:id="@+id/literatureViewRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

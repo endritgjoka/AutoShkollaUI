@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/black">
+
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/black">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/backImg"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="finish"-->
+<!--                android:src="@drawable/back_icon"/>-->
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/literatureViewToolbars"-->
+<!--                android:layout_width="match_parent"-->
+<!--                app:titleTextColor="@color/white"-->
+<!--                app:title="Endrit"-->
+<!--                android:drawableLeft="@drawable/back_icon"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:background="@color/black"-->
+<!--                app:layout_collapseMode="pin">-->
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/black"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/white"
+                        android:maxWidth="300dp"
+                        android:minHeight="250dp"
+                        app:cardCornerRadius="14dp">
+
+                        <ImageView
+                            android:id="@+id/image_literature"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/profile" />
+                    </androidx.cardview.widget.CardView>
+
+                    />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:id="@+id/titleLiterature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Rrugë"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/descriptionLiterature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Çdo rruge dhe rruge e pakategorizuar ne te cilen zhvillohet trafiku."
+                            android:textColor="#938C8C"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/backBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/forCards"
+                    android:drawableLeft="@drawable/back_icon"
+                    android:onClick="onBackClick"
+                    android:padding="0dp"
+                    android:text="Pas"
+                    android:textColor="#BC9712"
+                    android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/numberOfQuestion1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="1 / 126"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/forButtons"
+                    android:drawableRight="@drawable/next_icon"
+                    android:onClick="onNextClick"
+                    android:text="Para"
+                    android:paddingLeft="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
